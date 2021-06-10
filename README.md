@@ -14,12 +14,12 @@ Running on Jypyter Notebook
  
 
 ## Helper fucntions to handel image manipulation
-      - Load the image: Loads an image and returns it as a numpy array of floating-points
-      - Save the image: The image is  numpy array with pixel-values between 0 and 255, which is saved as jpeg-file.
-      - Plot images: It plots the content, mixed and style-images.
+      -Load the image: Loads an image and returns it as a numpy array of floating-points
+      -Save the image: The image is  numpy array with pixel-values between 0 and 255, which is saved as jpeg-file.
+      -Plot images: It plots the content, mixed and style-images.
 
 ## Loss Functions ar uesed in the opmistaion wiht tensor flow, by creating a tensorflow operation the Mean Squared Error between the two input tensors.
-     - Mean Squared Error: The mean sqaured error is the average of the sqaure of the difference between the output feature map and our image.
+     -Mean Squared Error: The mean sqaured error is the average of the sqaure of the difference between the output feature map and our image.
                            The difference is subtracted, then squared and finally we excute a reduce mean.
                            
                            Reduce Mean: Finds the average of all vlaues inside of the matrix.
@@ -27,7 +27,7 @@ Running on Jypyter Notebook
                            
                            Given the input tensors (a, b), this function defines the mean squared error and outputs a scaler value.
     
-    - Create Content Loss Function: Creates the loss-function for the content-image.  
+    -Create Content Loss Function: Creates the loss-function for the content-image.  
                                     It is the Mean Squared Error of the feature activations in the given layers in the model, between the content-image and the mixed-image. 
                                     A minimised content-loss means that the mixed-image has feature activations in the given layers that are very similar to the activations of the content-image.
    
