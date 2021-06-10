@@ -1,7 +1,28 @@
 # AI_For_Art
 
-It is based on the paper A Neural Algorithm of [Artistic Style](https://arxiv.org/abs/1508.06576). Note: this ppaer used VGG-19 models for TensorFlow instead og VGG-16.
+Style transfer is an optimisation problem, used to  minimisation the loss function. Taking two images (style image and x image ), the optimisation minimises the difference betweeen the images. It also makes use of zero shot or one shot learning, which is machine learning with very little data. 
+The approached used is based on the paper A Neural Algorithm of [Artistic Style](https://arxiv.org/abs/1508.06576). Note: this ppaer used VGG-19 models for TensorFlow instead og VGG-16.
 
+
+Network used is VGG16: it is an image classification convolutional network 
+At each layer it apples a series of operations to the input image
+Input image: matrix of values.
+
+At each layer we have a stack of filters that are learned overtime
+Filters: the filters are 3D vectors, which are a collection of matrics that are 2d, and the 3D is the rgb
+At each of these filters, a matrix multiplication and then a summation operation occurs on te input image.
+It acts as feture identifer
+large number imples a feture is detected 
+If not = zero.
+
+It will output a feature map or an activation map (large matrix of values). We want to minimise the difference between our feature map and our content image.
+
+#Input images
+Content image: Image to modify 
+Style image: we want to apply to content image
+Mixed Image: empty, random nosie initilase dimage we will add to over time.
+
+There is style loss and content loss and the combination of these using gradient value updates the mixed image.
 
 
 #Dependecies 
