@@ -1,6 +1,6 @@
 # AI_For_Art
 
-It is based on the paper A Neural Algorithm of Artistic Style{link}. Note: this ppaer used VGG-19 models for TensorFlow instead og VGG-16.
+It is based on the paper A Neural Algorithm of [Artistic Style](https://arxiv.org/abs/1508.06576). Note: this ppaer used VGG-19 models for TensorFlow instead og VGG-16.
 
 
 
@@ -13,21 +13,21 @@ It is based on the paper A Neural Algorithm of Artistic Style{link}. Note: this 
 Running on Jypyter Notebook 
  
 
-## Helper fucntions to handel image manipulation
+## Helper fucntions 
+The following are used to handle image manipulation:
 
 - Load the image: Loads an image and returns it as a numpy array of floating-points
 - Save the image: The image is  numpy array with pixel-values between 0 and 255, which is saved as jpeg-file.
 - Plot images: It plots the content, mixed and style-images.
 
-## Loss Functions ar uesed in the opmistaion wiht tensor flow, by creating a tensorflow operation the Mean Squared Error between the two input tensors.
+## Loss Functions 
 
   - Mean Squared Error: The mean sqaured error is the average of the sqaure of the difference between the output feature map and our image.
-                           The difference is subtracted, then squared and finally we excute a reduce mean.
+                        The difference is subtracted, then squared and finally we excute a reduce mean.
                            
-                           Reduce Mean: Finds the average of all vlaues inside of the matrix.
-                           The smaller the means squared error, the closer you are to finding the line of best fit.
-                           
-                           Given the input tensors (a, b), this function defines the mean squared error and outputs a scaler value.
+                        Reduce Mean: Finds the average of all vlaues inside of the matrix.
+                        The smaller the means squared error, the closer you are to finding the line of best fit.
+                        Given the input tensors (a, b), this function defines the mean squared error and outputs a scaler value.
     
   - Create Content Loss Function: Creates the loss-function for the content-image.  
                                     It is the Mean Squared Error of the feature activations in the given layers in the model, between the content-image and the mixed-image. 
@@ -45,7 +45,7 @@ Running on Jypyter Notebook
                                  It is similar to the content loss fucntion, but the Mean Squared Error for the Gram-matrices is used instead of the raw tensor-outputs from the layers.
                                 
                                 
-   - Denoise Loss Function: It creates the loss-function for denoising the mixed-image, using the  Total Variation Denoising{link} algorithm.
+   - Denoise Loss Function: It creates the loss-function for denoising the mixed-image, using the  [Total Variation Denoising](https://en.wikipedia.org/wiki/Total_variation_denoising) algorithm.
                             Total Variation Denoising: It shifts the image one pixel in the x- and y-axis and calculates the difference from the original image. 
                                                       It then takes the absolute value to ensure the difference is a positive number, and sums over all the pixels in the image. 
                             This creates a loss-function that can be minimised, allowing the suppression of some of the noise in the image e.g blurriness.
