@@ -34,6 +34,8 @@ There is style loss and content loss and the combination of these using gradient
 #Dependecies 
 
 - tensorflow
+     -import vgg16.py
+ 
 - matplotlib
 - python 3
 
