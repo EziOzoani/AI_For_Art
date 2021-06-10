@@ -39,8 +39,8 @@ There is style loss and content loss and the combination of these using gradient
                ```
     
    Using Keras
-               ```from keras.applications.vgg16 import VGG16
-                  model = VGG16(weights='imagenet')```
+               ```from keras.applications.vgg16 import VGG16```
+                ``` model = VGG16(weights='imagenet')```
  
 - matplotlib
 - python 3
