@@ -35,9 +35,9 @@ There is style loss and content loss and the combination of these using gradient
 
 - tensorflow
     imprting:
-                ```` 
-                ```
-                import vgg16.py
+               ```` 
+               ```
+               import vgg16.py
                ```
                ````
     
