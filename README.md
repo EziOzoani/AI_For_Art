@@ -1,6 +1,6 @@
 # AI_For_Art
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![made-with-Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-1f425f.svg)](https://jupyter.org/try)
+[![made-with-Jupyter-Notebook](https://img.shields.io/badge/Made%20with-Jupyter_NoteBook-1f425f.svg)](https://jupyter.org/try)
 
 
 
