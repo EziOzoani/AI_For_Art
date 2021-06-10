@@ -78,7 +78,7 @@ The following are used to handle image manipulation:
                            Total Variation Denoising: It shifts the image one pixel in the x- and y-axis and calculates the difference from the original image. 
                                                       It then takes the absolute value to ensure the difference is a positive number, and sums over all the pixels in the image. 
                       
-            This creates a loss-function that can be minimised, allowing the suppression of some of the noise in the image e.g blurriness.
+     This creates a loss-function that can be minimised, allowing the suppression of some of the noise in the image e.g blurriness.
                            
   
                             
