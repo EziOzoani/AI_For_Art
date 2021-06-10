@@ -1,4 +1,8 @@
 # AI_For_Art
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+
 
 Style transfer is an optimisation problem, used to  minimisation the loss function. Taking two images (style image and x image ), the optimisation minimises the difference betweeen the images. It also makes use of zero shot or one shot learning, which is machine learning with very little data. 
 The approached used is based on the paper A Neural Algorithm of [Artistic Style](https://arxiv.org/abs/1508.06576). Note: this ppaer used VGG-19 models for TensorFlow instead og VGG-16.
@@ -67,7 +71,9 @@ The following are used to handle image manipulation:
                                 
                                 
    - Denoise Loss Function: It creates the loss-function for denoising the mixed-image, using the  [Total Variation Denoising](https://en.wikipedia.org/wiki/Total_variation_denoising) algorithm.
-                            Total Variation Denoising: It shifts the image one pixel in the x- and y-axis and calculates the difference from the original image. 
+                            
+                        
+                           Total Variation Denoising: It shifts the image one pixel in the x- and y-axis and calculates the difference from the original image. 
                                                       It then takes the absolute value to ensure the difference is a positive number, and sums over all the pixels in the image. 
                             This creates a loss-function that can be minimised, allowing the suppression of some of the noise in the image e.g blurriness.
                            
@@ -76,3 +82,4 @@ The following are used to handle image manipulation:
    
    
      
+## - [ ]Style Transfer 
