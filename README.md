@@ -25,11 +25,9 @@ It will output a feature map or an activation map (large matrix of values). We w
 
 #Input images
 
-Content image: Image to modify 
-
-Style image: we want to apply to content image
-
-Mixed Image: empty, random nosie initilase dimage we will add to over time.
+*Content image: Image to modify 
+*Style image: we want to apply to content image
+*Mixed Image: empty, random nosie initilase dimage we will add to over time.
 
 There is style loss and content loss and the combination of these using gradient value updates the mixed image.
 
